@@ -172,7 +172,7 @@ const Home = () => {
           </div>
 
           <form>
-            <div className="line absolute h-14 w-1 top-[55%]  rounded-lg left-10 bg-[#9A6AFF]"></div>
+            <div className="line absolute h-14 w-1 top-[45%]  rounded-lg left-10 bg-[#9A6AFF]"></div>
 
             <input
               onClick={() => {
