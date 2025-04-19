@@ -69,7 +69,7 @@ const CaptainLogin = () => {
             onClick={async () => {
               try {
                 const response = await axios.post(
-                  "https://caber-77w9.onrender.com/api/user/auth/login",
+                  "https://caber-server.onrender.com/api/user/auth/login",
                   {
                     email,
                     password,

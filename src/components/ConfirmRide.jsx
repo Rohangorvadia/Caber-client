@@ -13,7 +13,7 @@ const ConfirmRide = (props) => {
 
     axios
       .post(
-        "https://caber-77w9.onrender.com/api/route/addPassenger",
+        "https://caber-server.onrender.com/api/route/addPassenger",
         {
           routeId: props.route._id,
         },

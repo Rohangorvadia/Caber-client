@@ -102,7 +102,7 @@ const UserSignup = () => {
             onClick={async () => {
               try {
                 const response = await axios.post(
-                  "https://caber-77w9.onrender.com/api/user/auth/signup",
+                  "https://caber-server.onrender.com/api/user/auth/signup",
                   {
                     email,
                     firstName,

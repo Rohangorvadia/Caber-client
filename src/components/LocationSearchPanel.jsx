@@ -9,7 +9,7 @@ const LocationSearchPanel = (props) => {
   useEffect(() => {
     const token = localStorage.getItem("token");
     const cleanToken = token ? token.replace(/"/g, "") : ""; // Handle possible null token
-    const url = `https://caber-77w9.onrender.com/api/route/bulk?origin=${props.pickup}&destination=${props.destination}`;
+    const url = `https://caber-server.onrender.com/api/route/bulk?origin=${props.pickup}&destination=${props.destination}`;
 
     console.log(url);
     axios

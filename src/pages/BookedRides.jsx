@@ -30,7 +30,7 @@ const BookedRides = () => {
 
     const cleanToken = token.replace(/"/g, "");
     axios
-      .get("https://caber-77w9.onrender.com/api/route/bookedRides", {
+      .get("https://caber-server.onrender.com/api/route/bookedRides", {
         headers: {
           Authorization: `Bearer ${cleanToken}`,
         },

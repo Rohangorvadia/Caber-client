@@ -10,11 +10,14 @@ export const getUserData = async () => {
   const cleanToken = token.replace(/"/g, "");
   console.log("Token:", cleanToken);
 
-  const response = await axios.get("https://caber-77w9.onrender.com/api/user/getUser", {
-    headers: {
-      Authorization: `Bearer ${cleanToken}`,
-    },
-  });
+  const response = await axios.get(
+    "https://caber-server.onrender.com/api/user/getUser",
+    {
+      headers: {
+        Authorization: `Bearer ${cleanToken}`,
+      },
+    }
+  );
   console.log(response.data);
   return response.data;
 };
@@ -30,7 +33,7 @@ export const getUserById = async (userId) => {
   console.log("Token in getbyid:", cleanToken);
 
   const response = await axios.get(
-    "https://caber-77w9.onrender.com/api/user/getById",
+    "https://caber-server.onrender.com/api/user/getById",
     {
       headers: {
         Authorization: `Bearer ${cleanToken}`,
@@ -53,7 +56,7 @@ export const getVehicleData = async () => {
   console.log("Token:", cleanToken);
 
   const response = await axios.get(
-    "https://caber-77w9.onrender.com/api/user/getVehicle",
+    "https://caber-server.onrender.com/api/user/getVehicle",
     {
       headers: {
         Authorization: `Bearer ${cleanToken}`,
@@ -75,7 +78,7 @@ export const getVehicleById = async (vehicleId) => {
   console.log("Token:", cleanToken);
 
   const response = await axios.get(
-    "https://caber-77w9.onrender.com/api/user/getVehicleById",
+    "https://caber-server.onrender.com/api/user/getVehicleById",
     {
       headers: {
         Authorization: `Bearer ${cleanToken}`,
@@ -98,7 +101,7 @@ export const getRouteById = async (routeId) => {
   console.log("Token:", cleanToken);
 
   const response = await axios.get(
-    "https://caber-77w9.onrender.com/api/route/getById",
+    "https://caber-server.onrender.com/api/route/getById",
     {
       headers: {
         Authorization: `Bearer ${cleanToken}`,
@@ -114,17 +117,20 @@ export const getbookedRides = async () => {
   const token = localStorage.getItem("token");
   if (!token) {
     console.error("No token found");
-    return null; 
+    return null;
   }
 
   const cleanToken = token.replace(/"/g, "");
   console.log("Token:", cleanToken);
 
-  const response = await axios.get("https://caber-77w9.onrender.com/api/route/bookedRides", {
-    headers: {
-      Authorization: `Bearer ${cleanToken}`,
-    },
-  });
+  const response = await axios.get(
+    "https://caber-server.onrender.com/api/route/bookedRides",
+    {
+      headers: {
+        Authorization: `Bearer ${cleanToken}`,
+      },
+    }
+  );
   console.log(response.data);
   return response.data;
 };

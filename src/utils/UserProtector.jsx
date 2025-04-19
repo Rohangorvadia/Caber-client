@@ -19,7 +19,7 @@ const UserProtector = ({ children }) => {
         }
 
         const response = await axios.get(
-          "https://caber-77w9.onrender.com/api/user/getUser",
+          "https://caber-server.onrender.com//api/user/getUser",
           {
             headers: {
               Authorization: `Bearer ${token}`,

@@ -7,7 +7,7 @@ const WaitingForDriver = (props) => {
   const [email, setEmail] = useState(null);
   const submitHandler = async () => {
     const response = await axios.post(
-      "https://caber-77w9.onrender.com/api/user/sendOTP",
+      "https://caber-server.onrender.com/api/user/sendOTP",
       {
         email,
       }

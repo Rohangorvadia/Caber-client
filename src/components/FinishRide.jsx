@@ -10,7 +10,7 @@ const FinishRide = (props) => {
     const cleanToken = token.replace(/"/g, "");
     axios
       .post(
-        "https://caber-77w9.onrender.com/api/route/finishRoute",
+        "https://caber-server.onrender.com/api/route/finishRoute",
         { routeId: props.routeId },
         {
           headers: {
